@@ -5,5 +5,5 @@
  */
 void prompt(void)
 {
-	PRINT("$cisfun");
+	PRINT("#cisfun$ ");
 }
