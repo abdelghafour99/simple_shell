@@ -114,9 +114,21 @@ int check_builtin(char **cmd);
 int handle_builtin(char **cmd, int st);
 void exit_bul(char **cmd, char *input, char **argv, int c, int stat);
 int change_dir(char **cmd, __attribute__((unused)) int st);
+/**
+ * dis_env - Displays environment
+ * @cmd: Parsed command
+ * @st: Status of last command executed
+ * Return: 0 on success
+ */
 int dis_env(__attribute__((unused)) char **cmd,
 			__attribute__((unused)) int st);
 int echo_bul(char **cmd, int st);
+/**
+ * history_dis - display history of user input on simple_shell
+ * @c: Parsed command
+ * @st: Status of last command executed
+ * Return: 0 on success
+ */
 int history_dis(__attribute__((unused)) char **c,
 				__attribute__((unused)) int st);
 

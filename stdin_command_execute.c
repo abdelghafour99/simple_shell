@@ -1,4 +1,4 @@
-#include "header.h"
+#include "shell.h"
 
 /**
  * check_cmd - Excutes commands found in predefined path

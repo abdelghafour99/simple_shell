@@ -5,5 +5,5 @@
  */
 void prompt(void)
 {
-	PRINT("$is fun");
+	PRINT("$cisfun");
 }
