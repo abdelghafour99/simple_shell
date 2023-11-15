@@ -9,12 +9,15 @@
  */
 int _unsetenv(const char *name)
 {
+	int final_result;
+
 	if (!name || name[0] == '\0')
 	{
 		perror("unsetenv: invalid env name\n");
 		return (-1);
 	}
-	if (unsetenv(name) < 0)
+	final_result = unsetenv(name);
+	if (final_result < 0)
 		perror("unsetenv: failed to unset env\n");
-	return (0);
+	return (final_result);
 }
