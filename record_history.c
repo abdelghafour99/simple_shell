@@ -1,10 +1,14 @@
 #include "shell.h"
 
 /**
- * history - write file with user inputs
- * @input: user input
+ * history - function taht write
+ *	   - a file with user input
+ *
+ * @input: The user input
+ *
  * Return: 0 on success -1 if failed
  */
+
 int history(char *input)
 {
 	char *filename = ".simple_shell_history";

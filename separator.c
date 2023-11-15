@@ -1,10 +1,14 @@
 #include "shell.h"
 
 /**
- * separator - Separates command recieved from stdin by ;
+ * separator - function that
+ *	     - Separates command recieved from stdin by ";"
+ *
  * @input: String gathered from stdin
+ *
  * Return: Parsed strings to be used as commands
  */
+
 char **separator(char *input)
 {
 	char **commands;
