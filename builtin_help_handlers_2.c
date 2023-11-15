@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * help_env - Displays information on the shell by builtin command 'env'
+ * help_env - Display the information on shell by the command _env_
  */
 void help_env(void)
 {
@@ -11,7 +11,7 @@ void help_env(void)
 }
 
 /**
- * help_setenv - Displays information on the shell by builtin command 'setenv'
+ * help_setenv - Display the information on the shell by the command _setenv_
  */
 void help_setenv(void)
 {
@@ -25,8 +25,8 @@ void help_setenv(void)
 }
 
 /**
- * help_unsetenv - Displays information on the shellby builtin command
- * 'unsetenv'
+ * help_unsetenv - Display the information on shell
+ *			- by the command _unsetenv_
  */
 void help_unsetenv(void)
 {
@@ -40,10 +40,12 @@ void help_unsetenv(void)
 }
 
 /**
- * display_help - display help for builtin commands
+ * display_help - display help for all builtin commands
+ *
  * @cmd: parsed command
  * @st: Status of last command executed
- * Return: 0 Success
+ *
+ * Return: Always 0 Success
  */
 int display_help(char **cmd, __attribute__((unused))int st)
 {

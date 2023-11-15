@@ -2,11 +2,13 @@
 #define SHELL_H
 
 /***** MACROS *****/
+
 #define PRINT(c) (write(STDERR_FILENO, c, _strlen(c)))
 #define BUFSIZE 10240
 #define DELIMITER " \t\r\n\a"
 
 /***LIBRARIES ***/
+
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>
@@ -114,6 +116,7 @@ int check_builtin(char **cmd);
 int handle_builtin(char **cmd, int st);
 void exit_bul(char **cmd, char *input, char **argv, int c, int stat);
 int change_dir(char **cmd, __attribute__((unused)) int st);
+
 /**
  * dis_env - Displays environment
  * @cmd: Parsed command
@@ -123,6 +126,7 @@ int change_dir(char **cmd, __attribute__((unused)) int st);
 int dis_env(__attribute__((unused)) char **cmd,
 			__attribute__((unused)) int st);
 int echo_bul(char **cmd, int st);
+
 /**
  * history_dis - display history of user input on simple_shell
  * @c: Parsed command
@@ -141,6 +145,7 @@ int history_dis(__attribute__((unused)) char **c,
  * @function: - Pointer to custom functions that have
  * similar functionalities as the built-in commands
  */
+
 typedef struct _builtin
 {
 	char *command;
