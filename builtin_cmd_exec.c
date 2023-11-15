@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * change_dir - Changes directory
+ * change_dir - Changes the current directory
  * @cmd: Parsed command
  * @st: Status of last command executed
  * Return: 0 on success 1 if failed (For OLDPWD Always 0 incase of no OLDPWD)
  */
-int change_dir(char **cmd, __attribute__((unused))int st)
+int change_dir(char **cmd, __attribute__((unused)) int st)
 {
 	int value = -1;
 	char cwd[PATH_MAX];
@@ -94,7 +94,7 @@ int echo_bul(char **cmd, int st)
  * @st: status of last command executed
  * Return: 0 success or -1 if fail
  */
-int history_dis(__attribute__((unused))char **c, __attribute__((unused))int st)
+int history_dis(__attribute__((unused)) char **c, __attribute__((unused)) int st)
 {
 	char *filename = ".simple_shell_history";
 	FILE *fp;
