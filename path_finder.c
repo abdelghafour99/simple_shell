@@ -14,7 +14,7 @@ int path_cmd(char **cmd)
 	value = _strtok(path, ":");
 	while (value != NULL)
 	{
-		cmd_path = build(*cmd, value);
+		cmd_path = build_cmd(*cmd, value);
 		if (stat(cmd_path, &buf) == 0)
 		{
 			*cmd = _strdup(cmd_path);
