@@ -1,7 +1,8 @@
 #include "shell.h"
 
 /**
- * read_file - Reads commands from the argument File
+ * read_file - function that Reads commands
+ *	     - from the argile
  * @file: File containing commands
  * @argv: Arguments passed
  * Return: -1 or 0
@@ -58,7 +59,7 @@ void treat_file(char *line, int count, FILE *fp, char **argv)
 }
 
 /**
- * exit_bul_for_file - Exit status handler for file input
+ * exit_bul_for_file - Exit status handler for a file giving
  * @line: Line from a file
  * @cmd: Parsed command
  * @fd: File Descriptor
