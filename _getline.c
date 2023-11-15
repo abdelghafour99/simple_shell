@@ -1,7 +1,9 @@
 #include "shell.h"
 
 /**
- * _getline - read input from standard input by user
+ * _getline - function that read input
+ *	    - from a standard input by user
+ *
  * Return: the input on a buffer
  */
 char *_getline()
@@ -45,7 +47,8 @@ char *_getline()
 }
 
 /**
- * enter - Handles newline character input
+ * enter - function thath handle newline character input
+ *
  * @string: String to be handled
  * Return: Empty string
  */
@@ -56,7 +59,9 @@ char *enter(char *string)
 }
 
 /**
- * space - Modifies the input string to remove preceeding whitespaces
+ * space - function that Modifies the input string
+ *	 - in order to remove preceeding whitespaces
+ *
  * @str: Input to be modifies
  * Return: Returns the modified string
  */
