@@ -1,9 +1,13 @@
 #include "shell.h"
 
 /**
- * print_number - Prints unsigned integers using _putchar function
+ * print_number - function that Prints
+ *		- The unsigned integers giving
+ *		- using _putchar_function
+ *
  * @n: Unsigned integer to be printed
  */
+
 void print_number(unsigned int n)
 {
 	unsigned int x = n;
@@ -15,9 +19,12 @@ void print_number(unsigned int n)
 }
 
 /**
- * print_number_int - Prints integers using _putchar function
+ * print_number_int - function that Prints
+ *		    - the giving integer using _putchar_function
+ *
  * @n: Integer to be printed
  */
+
 void print_number_int(int n)
 {
 	unsigned int x = n;
@@ -34,10 +41,13 @@ void print_number_int(int n)
 }
 
 /**
- * print_echo - Executes built-in echo function
+ * print_echo - function that Execut the built-in echo function
+ *
  * @cmd: Parsed Command
+ *
  * Return: 0 Upon Success -1 Upon Failure
  */
+
 int print_echo(char **cmd)
 {
 	pid_t pid;
