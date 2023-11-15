@@ -34,9 +34,10 @@ int _strcmp(char *s1, char *s2)
 }
 
 /**
- * _isalpha - function to check if c is alphabet
- * @c: character to check
- * Return: 1 if true 0 if false
+ * _isalpha - function that check
+ *	    - if the character giving is an alphabet
+ * @c: The character to check
+ * Return: 1 if True 0 if False
  */
 int _isalpha(int c)
 {
@@ -52,8 +53,8 @@ int _isalpha(int c)
 
 /**
  * _itoa - funciton that convert integer to character
- * @n: integer to convert
- * Return: character pointer
+ * @n: the integer giving to convert
+ * Return: pointer to character
  */
 char *_itoa(unsigned int n)
 {
@@ -85,7 +86,7 @@ char *_itoa(unsigned int n)
 }
 
 /**
- * array_rev - function reverse an array
+ * array_rev - function that reverse an array
  * @arr: array to reverse
  * @len: length of array
  */
@@ -104,8 +105,8 @@ void array_rev(char *arr, int len)
 
 /**
  * intlen - function that determine length of integer
- * @num: given integer
- * Return: length of integer
+ * @num: the given integer
+ * Return: the length of integer giving
  */
 int intlen(int num)
 {
