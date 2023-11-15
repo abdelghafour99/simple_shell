@@ -9,7 +9,8 @@ set -x
 
 cat > "${ROOTDIR}/AUTHORS" <<- EOF
   # This file lists all contributors to the repository.
-  # To see how it's generated, visit https://github.com/moby/moby/blob/master/hack/generate-authors.sh
+  # To see how it's generated,
+  # visit https://github.com/moby/moby/blob/master/hack/generate-authors.sh
 
   $(git -C "$ROOTDIR" log --format='%aN <%aE>' | LC_ALL=C.UTF-8 sort -uf)
 
