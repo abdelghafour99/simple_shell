@@ -35,10 +35,10 @@ int change_dir(char **cmd, __attribute__((unused)) int st)
 }
 
 /**
- * dis_env - Display enviroment variable
- * @cmd: parsed command
- * @st: status of last command executed
- * Return: Always 0
+ * dis_env - Displays environment
+ * @cmd: Parsed command
+ * @st: Status of last command executed
+ * Return: 0 on success
  */
 int dis_env(__attribute__((unused)) char **cmd, __attribute__((unused)) int st)
 {
@@ -55,10 +55,10 @@ int dis_env(__attribute__((unused)) char **cmd, __attribute__((unused)) int st)
 }
 
 /**
- * echo_bul - execute echo cases
- * @st: statue of last command executed
- * @cmd: parsed command
- * Return: Always 1 Or execute normal echo
+ * echo_bul - Echo command
+ * @cmd: Parsed command
+ * @st: Status of last command executed
+ * Return: 0 on success
  */
 int echo_bul(char **cmd, int st)
 {
@@ -90,9 +90,9 @@ int echo_bul(char **cmd, int st)
 
 /**
  * history_dis - display history of user input on simple_shell
- * @c: parsed command
- * @st: status of last command executed
- * Return: 0 success or -1 if fail
+ * @c: Parsed command
+ * @st: Status of last command executed
+ * Return: 0 on success
  */
 int history_dis(__attribute__((unused)) char **c,
 				__attribute__((unused)) int st)

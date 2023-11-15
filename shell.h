@@ -19,7 +19,7 @@
 #include <errno.h>
 #include <linux/limits.h>
 
-/******** STRING HANDLER FUNCTIONS **********/
+/******** String Handlers **********/
 
 char *_strncpy(char *dest, char *src, int n);
 int _strlen(char *s);
@@ -37,7 +37,7 @@ char *_strchr(char *s, char c);
 int _strncmp(const char *s1, const char *s2, size_t n);
 char *_strdup(char *str);
 
-/*********** MEMORY HANDLERS ***********/
+/*********** Memory Handlers ***********/
 
 void free_env(char **env);
 void *fill_an_array(void *a, int el, unsigned int len);
@@ -46,7 +46,7 @@ void *_calloc(unsigned int size);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 void free_all(char **input, char *line);
 
-/****** MISCELLANEOUS AND INPUT FUNCTIONS *******/
+/****** Misc Functions *******/
 
 char *_getline();
 char *space(char *str);
@@ -58,44 +58,44 @@ char *_strtok(char *str, const char *delim);
 int history(char *input);
 char **separator(char *input);
 
-/****** FILE ARGUMENT HANDLER FUNCTIONS ******/
+/****** Argument Handlers ******/
 
 void read_file(char *file, char **argv);
 void treat_file(char *line, int count, FILE *fp, char **argv);
 void exit_bul_for_file(char **cmd, char *line, FILE *fd);
 
-/****** PARSED ARGUMENT HANDLER FUNCTIONS *****/
+/****** Parsed argument handlers *****/
 
 char **parse_cmd(char *input);
 int handle_builtin(char **cmd, int er);
 int check_cmd(char **cmd, char *input, int c, char **argv);
 void signal_to_handle(int sig);
 
-/******* ERROR HANDLERS ******/
+/******* Error Handlers ******/
 
 void print_error(char *input, int counter, char **argv);
 void _prerror(char **argv, int c, char **cmd);
 void error_file(char **argv, int c);
 
-/****** ENVIRONMENT HANDLERS ******/
+/****** Environment Handlers ******/
 
 extern char **environ;
 void create_envi(char **envi);
 void free_env(char **env);
 
-/****** PRINTING FUNCTIONS *****/
+/****** Printers *****/
 
 void print_number(unsigned int n);
 void print_number_int(int n);
 int print_echo(char **cmd);
 
-/******* PATH FINDER *******/
+/******* Path Finder *******/
 
 int path_cmd(char **cmd);
-char *build(char *token, char *value);
+char *build_cmd(char *token, char *value);
 char *_getenv(char *name);
 
-/******* HELP HANDLERS *******/
+/******* Help Handlers *******/
 
 void help_env(void);
 void help_setenv(void);
@@ -108,7 +108,7 @@ void help_exit(void);
 void help_help(void);
 int display_help(char **cmd, __attribute__((unused)) int st);
 
-/****** BUILTIN COMMAND HANDLERS AND EXECUTE ******/
+/****** Built-in Command Handlers ******/
 
 int check_builtin(char **cmd);
 int handle_builtin(char **cmd, int st);
@@ -132,7 +132,7 @@ int echo_bul(char **cmd, int st);
 int history_dis(__attribute__((unused)) char **c,
 				__attribute__((unused)) int st);
 
-/****** BUILT-IN COMMANDS STRUCT *****/
+/****** Built-in Struct *****/
 
 /**
  * struct _builtin - Defines a struct that conatins built-in commands

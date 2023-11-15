@@ -31,12 +31,12 @@ int path_cmd(char **cmd)
 }
 
 /**
- * build - Build command
+ * build_cmd - Build command
  * @token: Executable command
  * @value: Directory conatining Command
  * Return: Parsed full path of command or NULL if failed
  */
-char *build(char *token, char *value)
+char *build_cmd(char *token, char *value)
 {
 	char *cmd;
 	size_t len;
@@ -70,7 +70,7 @@ char *_getenv(char *name)
 	int i, j, k;
 
 	name_len = _strlen(name);
-	for (i = 0 ; environ[i]; i++)
+	for (i = 0; environ[i]; i++)
 	{
 		if (_strncmp(name, environ[i], name_len) == 0)
 		{

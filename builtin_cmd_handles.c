@@ -31,10 +31,10 @@ int check_builtin(char **cmd)
 }
 
 /**
- * handle_builtin - Handles predefined built in commands
- * @cmd: Array of parsed command strings
- * @st: Status of last execution
- * Return: -1 Failure 0 Success
+ * handle_builtin - Handles built-in commands
+ * @cmd: Parsed command to be handled
+ * @st: Status of last command executed
+ * Return: 0 on success -1 on failure
  */
 int handle_builtin(char **cmd, int st)
 {
@@ -60,13 +60,14 @@ int handle_builtin(char **cmd, int st)
 }
 
 /**
- * exit_bul - Exit Status for built-in commands
- * @cmd: Array of parsed command strings
- * @input: Input recieved from user (to be freed)
- * @argv: Arguments before program starts(argv[0] == Shell Program Name)
- * @c: Shell execution count
- * @stat: Exit status
- */
+ * exit_bul - Exits shell
+ * @cmd: Parsed command
+ * @input: User input
+ * @argv: Argument vector
+ * @c: Parsed command
+ * @stat: Status of last command executed
+ * Return: 0 on success -1 on failure
+*/
 void exit_bul(char **cmd, char *input, char **argv, int c, int stat)
 {
 	int status, i = 0;
