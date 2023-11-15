@@ -2,7 +2,7 @@
 
 /**
  * _putchar - function that writes the character to stdout
- * @c: The character to print
+ * @c: The character to be printed
  * Return: character to standard output
  */
 int _putchar(char c)
@@ -31,7 +31,7 @@ void _puts(char *str)
  * @dest: destination string
  * @src: source string
  * @n: number of charaters to be copied
- * Return: copied strings
+ * Return: the string copied
  */
 char *_strncpy(char *dest, char *src, int n)
 {
@@ -67,9 +67,9 @@ int _strlen(char *s)
 }
 
 /**
- * _atoi - function to convert string to a integer
+ * _atoi - function that convert a string to an integer
  * @s: string input
- * Return: converted integer
+ * Return: the converted integer
  */
 int _atoi(char *s)
 {

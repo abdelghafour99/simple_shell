@@ -21,9 +21,9 @@ char *_strcpy(char *dest, char *src)
 
 /**
  * _strcat - function that concatenates two strings
- * @dest: first string
- * @src: second string
- * Return: first string + second string
+ * @dest: The first string
+ * @src: The second one
+ * Return: first string + second one
  */
 char *_strcat(char *dest, char *src)
 {
@@ -45,8 +45,8 @@ char *_strcat(char *dest, char *src)
 }
 
 /**
- * _strchr - function that locates character in a string
- * @s: string to be searched
+ * _strchr - function that locates a character in a string
+ * @s: string to be checked
  * @c: character to be located
  * Return: pointer to character
  */
@@ -63,8 +63,8 @@ char *_strchr(char *s, char c)
 
 /**
  * _strncmp - function that compares n amount of characters of two strings
- * @s1: first string
- * @s2: second string
+ * @s1: The first string
+ * @s2: The second one
  * @n: amount of characters to compare
  * Return: 1 if the strings don't match otherwise 0
  */
@@ -86,8 +86,8 @@ int _strncmp(const char *s1, const char *s2, size_t n)
 }
 
 /**
- * _strdup - duplicate a string
- * @str: string
+ * _strdup - function that duplicate a string
+ * @str: The string giving
  * Return: duplicated string or Null if failed
  */
 char *_strdup(char *str)
